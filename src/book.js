@@ -1,13 +1,13 @@
 function createTitle(string) {
-  return `The ${string}`
+  return `The ${string}`;
 }
 
 function buildMainCharacter(name, age, pronouns) {
-  return {name: name, age: age, pronouns: pronouns};
+  return {name, age, pronouns};
 }
 
 function saveReview(details, reviews) {
-  if (reviews.includes(details) === false) {
+  if (!reviews.includes(details)) {
   return reviews.push(details);
   }
 }
